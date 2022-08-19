@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Курс валют</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash">Splash</string>
+    <string name="nameExchange">Название</string>
+    <string name="buy">Курс</string>
+    <string name="sale">Продажа</string>
+    <string name="prev">Изменение</string>
+    <string name="kodExchange">Код</string>
+    <string name="lastUpdate">Последнее обновление:</string>
+</resources>
