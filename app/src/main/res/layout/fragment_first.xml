@@ -6,8 +6,8 @@
     android:orientation="vertical"
     android:layout_marginStart="5dp"
     android:layout_marginEnd="5dp"
-    android:background="@color/white"
-    tools:context=".screens.first.FirstFragment">
+    android:background="@drawable/custom_view"
+    tools:context=".ui.fragments.FirstFragment">
     
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,13 +15,14 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="430dp"
             android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:padding="10dp"
             android:layout_weight="1"
-            android:textColor="@color/blue"
-            android:text="@string/lastUpdate"/>
+            android:padding="10dp"
+            android:text="@string/lastUpdate"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/lastUpdateTextView"
@@ -29,8 +30,9 @@
             android:layout_height="wrap_content"
             android:textSize="18sp"
             android:padding="10dp"
+            android:layout_gravity="center"
             android:layout_weight="1"
-            android:textColor="@color/blue"/>
+            android:textColor="#05198A"/>
     </LinearLayout>
 
     <LinearLayout
@@ -40,14 +42,16 @@
         android:layout_marginBottom="10dp"
         android:background="@drawable/custom_layout">
 
-    <TextView
-        android:id="@+id/USDCodeTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:layout_gravity="center"
-        android:textColor="@color/purple_700"
-        android:text="@string/nameExchange"/>
+        <TextView
+            android:id="@+id/USDCodeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="@string/nameExchange"
+            android:textColor="@color/purple_700"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -141,10 +145,11 @@
             android:id="@+id/EURCodeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="22sp"
             android:layout_gravity="center"
+            android:text="@string/nameExchange"
             android:textColor="@color/purple_700"
-            android:text="@string/nameExchange"/>
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -239,10 +244,11 @@
             android:id="@+id/CNYCodeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="22sp"
             android:layout_gravity="center"
+            android:text="@string/nameExchange"
             android:textColor="@color/purple_700"
-            android:text="@string/nameExchange"/>
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -337,10 +343,11 @@
             android:id="@+id/SEKCodeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="22sp"
             android:layout_gravity="center"
+            android:text="@string/nameExchange"
             android:textColor="@color/purple_700"
-            android:text="@string/nameExchange"/>
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"

@@ -1,4 +1,4 @@
-package com.viol4tsf.exchangerate.screens.second
+package com.viol4tsf.exchangerate.ui.viewmodels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

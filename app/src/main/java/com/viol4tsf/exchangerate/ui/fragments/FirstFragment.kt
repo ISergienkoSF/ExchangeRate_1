@@ -1,19 +1,18 @@
-package com.viol4tsf.exchangerate.screens.first
+package com.viol4tsf.exchangerate.ui.fragments
 
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.text.format.DateFormat
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.RecyclerView
 import com.viol4tsf.exchangerate.R
 import com.viol4tsf.exchangerate.data.repository.Repository
+import com.viol4tsf.exchangerate.ui.viewmodels.FirstViewModel
+import com.viol4tsf.exchangerate.ui.viewmodels.factories.FirstViewModelFactory
 import kotlinx.android.synthetic.main.fragment_first.view.*
 import java.text.SimpleDateFormat
 import java.util.*
@@ -37,7 +36,7 @@ class FirstFragment : Fragment() {
         viewModel.myResponse.observe(viewLifecycleOwner, Observer { response->
             val formatter = SimpleDateFormat("yyyy-MM-dd")
             val date: Date = formatter.parse(response.Timestamp) as Date
-            v.lastUpdateTextView.text = DateFormat.format("yyyy-MM-dd HH:mm:ss", date)
+            v.lastUpdateTextView.text = DateFormat.format("yyyy-MM-dd HH:mm", date)
 
             v.USDCodeTextView.text = response.Valute.USD.CharCode
             v.USDnameTextView.text = response.Valute.USD.Name

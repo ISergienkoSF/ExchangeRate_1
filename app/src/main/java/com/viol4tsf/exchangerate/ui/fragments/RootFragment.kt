@@ -1,4 +1,4 @@
-package com.viol4tsf.exchangerate.screens.root
+package com.viol4tsf.exchangerate.ui.fragments
 
 import android.content.Context
 import android.os.Bundle
@@ -9,8 +9,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.FragmentActivity
 import com.google.android.material.tabs.TabLayoutMediator
 import com.viol4tsf.exchangerate.R
-import com.viol4tsf.exchangerate.ViewPagerAdapter
-import kotlinx.android.synthetic.main.fragment_root.*
+import com.viol4tsf.exchangerate.adapters.ViewPagerAdapter
 import kotlinx.android.synthetic.main.fragment_root.view.*
 
 class RootFragment : Fragment() {
@@ -34,7 +33,7 @@ class RootFragment : Fragment() {
         TabLayoutMediator(view.tabLayout, view.viewPager){ tab, position ->
             when(position){
                 0 -> {
-                    tab.setIcon(R.drawable.ic_baseline_attach_money_24)
+                    tab.setIcon(R.drawable.ic_baseline_public_24)
                 }
                 1 -> {
                     tab.setIcon(R.drawable.ic_baseline_location_on_24)

@@ -1,4 +1,4 @@
-package com.viol4tsf.exchangerate.screens.second
+package com.viol4tsf.exchangerate.ui.fragments
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -9,11 +9,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.Observer
-import androidx.recyclerview.widget.RecyclerView
 import com.viol4tsf.exchangerate.R
 import com.viol4tsf.exchangerate.data.repository.Repository
-import com.viol4tsf.exchangerate.screens.first.FirstViewModel
-import com.viol4tsf.exchangerate.screens.first.FirstViewModelFactory
+import com.viol4tsf.exchangerate.ui.viewmodels.SecondViewModel
+import com.viol4tsf.exchangerate.ui.viewmodels.factories.SecondViewModelFactory
 import kotlinx.android.synthetic.main.fragment_second.view.*
 import java.text.SimpleDateFormat
 import java.util.*
@@ -37,7 +36,7 @@ class SecondFragment : Fragment() {
         viewModel.myResponse.observe(viewLifecycleOwner, Observer { response->
             val formatter = SimpleDateFormat("yyyy-MM-dd")
             val date: Date = formatter.parse(response.Timestamp) as Date
-            v.lastUpdateTextView.text = DateFormat.format("yyyy-MM-dd HH:mm:ss", date)
+            v.lastUpdateTextView.text = DateFormat.format("yyyy-MM-dd HH:mm", date)
 
             v.KZTCodeTextView.text = response.Valute.KZT.CharCode
             v.KZTnameTextView.text = response.Valute.KZT.Name

@@ -1,9 +1,9 @@
-package com.viol4tsf.exchangerate.screens.second
+package com.viol4tsf.exchangerate.ui.viewmodels.factories
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.viol4tsf.exchangerate.data.repository.Repository
-import com.viol4tsf.exchangerate.screens.first.FirstViewModel
+import com.viol4tsf.exchangerate.ui.viewmodels.SecondViewModel
 
 class SecondViewModelFactory (private val repository: Repository) : ViewModelProvider.Factory{
 

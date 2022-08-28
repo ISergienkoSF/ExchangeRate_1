@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_marginStart="5dp"
     android:layout_marginEnd="5dp"
-    tools:context=".screens.second.SecondFragment">
+    tools:context=".ui.fragments.SecondFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,12 +14,13 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="430dp"
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:padding="10dp"
+            android:textStyle="bold"
             android:layout_weight="1"
-            android:textColor="@color/blue"
+            android:textColor="#FFFFFF"
             android:text="@string/lastUpdate"/>
 
         <TextView
@@ -27,6 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="18sp"
+            android:layout_gravity="center"
             android:padding="10dp"
             android:layout_weight="1"
             android:textColor="@color/blue"/>
@@ -43,10 +45,11 @@
             android:id="@+id/KZTCodeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="22sp"
             android:layout_gravity="center"
+            android:text="@string/nameExchange"
             android:textColor="@color/purple_700"
-            android:text="@string/nameExchange"/>
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -140,10 +143,11 @@
             android:id="@+id/BYNCodeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="22sp"
             android:layout_gravity="center"
+            android:text="@string/nameExchange"
             android:textColor="@color/purple_700"
-            android:text="@string/nameExchange"/>
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -238,10 +242,11 @@
             android:id="@+id/UAHCodeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="22sp"
             android:layout_gravity="center"
+            android:text="@string/nameExchange"
             android:textColor="@color/purple_700"
-            android:text="@string/nameExchange"/>
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -336,10 +341,11 @@
             android:id="@+id/KGSCodeTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="22sp"
             android:layout_gravity="center"
+            android:text="@string/nameExchange"
             android:textColor="@color/purple_700"
-            android:text="@string/nameExchange"/>
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
